@@ -1,35 +1,11 @@
-import axios from 'axios';
 import { useQuery, useMutation, useQueryClient } from 'react-query';
-
-const getTodos = async () => {
-	const { data } = await axios.get('http://localhost:3001/todos');
-	return data;
-};
-
-const getTodo = async (id) => {
-	const { data } = await axios.get(`http://localhost:3001/todos/${id}`);
-	return data;
-};
-
-const addTodo = async (todo) => {
-	const { data } = await axios.post('http://localhost:3001/todos', todo);
-
-	return data;
-};
-
-const deleteTodo = async (id) => {
-	console.log(id);
-	const { data } = await axios.delete(`http://localhost:3001/todos/${id.id}`);
-	return data;
-};
-
-const updateTodo = async (todo) => {
-	const { data } = await axios.put(
-		`http://localhost:3001/todos/${todo.id}`,
-		todo
-	);
-	return data;
-};
+import {
+	getTodos,
+	getTodo,
+	addTodo,
+	deleteTodo,
+	updateTodo
+} from '../api/todos-api';
 
 export const useTodos = () => {
 	return useQuery('todos', getTodos, {

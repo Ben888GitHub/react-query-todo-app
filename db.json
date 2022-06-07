@@ -2,28 +2,18 @@
   "todos": [
     {
       "id": 1,
-      "title": "Buy milk",
+      "title": "Buy dairy milk",
       "description": "Supermarket Cow Milk"
     },
     {
       "id": 2,
-      "title": "Buy eggs",
+      "title": "Buy Omelet",
       "description": "Duck Eggs from the farm"
     },
     {
       "id": 3,
       "title": "Buy bread",
-      "description": "Just an Oat Bread"
-    },
-    {
-      "id": 71,
-      "title": "Apollo",
-      "description": "API Query Engine"
-    },
-    {
-      "id": 95,
-      "title": "Zustand",
-      "description": "State Management for Large Apps"
+      "description": "Bread from the bakery"
     }
   ]
 }

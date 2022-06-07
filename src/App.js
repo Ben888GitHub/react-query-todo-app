@@ -1,5 +1,5 @@
 import './App.css';
-import { lazy, Suspense } from 'react';
+
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Routes, Route } from 'react-router-dom';
 import TodoList from './components/todos/TodoList';
